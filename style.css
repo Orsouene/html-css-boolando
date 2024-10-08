@@ -10,18 +10,91 @@
 .simbolo{ font-size: 16px;}
   
    /*container*/
-#container{border: 1px solid red;
-           width: 100%;}
+#container{width: 100%;}
  
    /*HEADER*/
-#header{border:1px solid blue;
-          display: flex;
+#header{  display: flex;
           justify-content: space-around;
           width: 100%;
           background-color: #FF6900;
-          padding: 15px 0;}
+          padding: 15px 0;
+         position: fixed;
+         z-index: 1;
+        margin-bottom: 30px;}
    
 .Boolean-logo{height: 30px;}
 
 .genere, .simbolo{padding-top: 10px;
-                  font-weight: bold;}       
+                  font-weight: bold;} 
+   /*END-HEADER*/      
+   
+   /*Main*/
+
+ .box{display: flex;
+       gap: 20px;
+       justify-content: center;
+       width: 100%;
+       padding-top: 70px;
+      position: relative;}
+       
+.div-imaggine .imaggine{display: block;
+        width: 100%;}
+ .div-imaggine .imaggine{display: block;
+        width: 100%;}
+  
+  .imaggine{height: 700px;
+             padding-top: 50px;}
+   
+  .bold{font-weight: bold;}
+  .span-red{color: red;}
+  .span-riga{text-decoration: line-through;}
+
+  .sconto-red{color: white;
+              background-color: red;
+              text-align: center;
+              padding: 3px 10px;  }
+  .sostenibilità{color: white;
+                 background-color: green;
+                 text-align: center;
+                 padding: 3px 7px;}
+
+   .sconto-red-sostenibilità{display: flex;
+                            gap: 5px;
+                         position: absolute;
+                         bottom: 100px;}
+    .cuore1{background-color: white;
+        position: absolute;
+        bottom: 650px;
+        left: 656px;
+        padding: 15px 15px;
+        font-size: larger;}
+    .cuore2{left:1126px;}
+    .cuore3{ left:1596px ;}
+     
+   
+    .seconda-imaggine{ position: absolute;
+     height: 650px;
+     bottom: 53px;
+    display: none;
+     margin-top: 50px;}
+    
+    
+    
+    /*HOVER*/
+    .div-imaggine:hover .seconda-imaggine{display: block;}
+     .div-imaggine:hover .cuore1 {color: red;}
+
+
+     /*FOOTER*/
+
+     .footer{background-color: #1A1A1A;
+           display: flex; 
+           justify-content: space-between ;
+           padding: 40px 260px; 
+           margin-top: 50px;         
+        }
+    .boolando{ color: white;
+             font-weight: bolder;
+             }
+
+    .p-footer{color: white;} 
