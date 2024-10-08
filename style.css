@@ -6,11 +6,12 @@
 #a{color: white;
    text-decoration: none;
    padding-right: 5px;}
-   
+
 .simbolo{ font-size: 16px;}
   
    /*container*/
-#container{width: 100%;}
+#container{width: 100%;
+  flex-wrap: wrap;}
  
    /*HEADER*/
 #header{  display: flex;
@@ -65,11 +66,11 @@
     .cuore1{background-color: white;
         position: absolute;
         bottom: 650px;
-        left: 656px;
-        padding: 15px 15px;
+        left: 658px;
+        padding: 11px 15px;
         font-size: larger;}
-    .cuore2{left:1126px;}
-    .cuore3{ left:1596px ;}
+    .cuore2{left:1128px;}
+    .cuore3{ left:1598px ;}
      
    
     .seconda-imaggine{ position: absolute;
@@ -83,7 +84,7 @@
     /*HOVER*/
     .div-imaggine:hover .seconda-imaggine{display: block;}
      .div-imaggine:hover .cuore1 {color: red;}
-
+     #a:hover{font-size: 150%;}  
 
      /*FOOTER*/
 
