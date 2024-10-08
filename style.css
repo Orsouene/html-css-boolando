@@ -1,0 +1,27 @@
+
+   /*GENERALE*/
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+#a{color: white;
+   text-decoration: none;
+   padding-right: 5px;}
+   
+.simbolo{ font-size: 16px;}
+  
+   /*container*/
+#container{border: 1px solid red;
+           width: 100%;}
+ 
+   /*HEADER*/
+#header{border:1px solid blue;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          background-color: #FF6900;
+          padding: 15px 0;}
+   
+.Boolean-logo{height: 30px;}
+
+.genere, .simbolo{padding-top: 10px;
+                  font-weight: bold;}       
