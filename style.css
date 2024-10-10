@@ -9,10 +9,9 @@
 
 .simbolo{ font-size: 16px;}
   
+.flex-wrap{flex-wrap: wrap;}
    /*container*/
-#container{width: 100%;
-  flex-wrap: wrap;}
- 
+
    /*HEADER*/
 #header{  display: flex;
           justify-content: space-around;
@@ -20,28 +19,27 @@
           background-color: #FF6900;
           padding: 15px 0;
          position: fixed;
-         z-index: 1;
-        margin-bottom: 30px;}
+        z-index: 10000;}
    
 .Boolean-logo{height: 30px;}
-
+/*.debug{border: 1px solid red;}*/
 .genere, .simbolo{padding-top: 10px;
                   font-weight: bold;} 
    /*END-HEADER*/      
    
    /*Main*/
-
+ main{ margin: 0px auto;
+   max-width: 1200px;}
+ 
  .box{display: flex;
-       gap: 20px;
-       justify-content: center;
-       width: 100%;
-       padding-top: 70px;
-      position: relative;}
+       gap: 5px;
+      flex-wrap: wrap;}
        
-.div-imaggine .imaggine{display: block;
-        width: 100%;}
- .div-imaggine .imaggine{display: block;
-        width: 100%;}
+.div-imaggine img{display: block;
+        width: 100%; 
+      margin-top: 150px;}
+ .div-imaggine {width: calc(( 100% - 10px ) / 3);
+               position: relative;}
   
   .imaggine{height: 700px;
              padding-top: 50px;}
@@ -59,31 +57,32 @@
                  text-align: center;
                  padding: 3px 7px;}
 
-   .sconto-red-sostenibilità{display: flex;
+   .sconto-red-sostenibilità{
                             gap: 5px;
                          position: absolute;
-                         bottom: 100px;}
-    .cuore1{background-color: white;
-        position: absolute;
-        bottom: 650px;
-        left: 658px;
-        padding: 11px 15px;
-        font-size: larger;}
-    .cuore2{left:1128px;}
-    .cuore3{ left:1598px ;}
-     
+                         bottom: 100px;
+                         display: flex;}
+
    
-    .seconda-imaggine{ position: absolute;
-     height: 650px;
-     bottom: 53px;
-    display: none;
-     margin-top: 50px;}
+   .div-imaggine img.seconda-imaggine{ position: absolute;
+     top: 0;
+     left: 0;
+     display: none;
+}
     
-    
+     .cuore{ text-align: right;
+            background-color: rgb(255, 255, 255);
+           position: absolute;
+           bottom: 70%;
+           right: 0%;
+           padding: 20px;
+         
+  }
+            
     
     /*HOVER*/
     .div-imaggine:hover .seconda-imaggine{display: block;}
-     .div-imaggine:hover .cuore1 {color: red;}
+     .div-imaggine:hover .cuore {color: red;}
      #a:hover{font-size: 150%;}  
 
      /*FOOTER*/
