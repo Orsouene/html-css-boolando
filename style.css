@@ -73,10 +73,10 @@
      .cuore{ text-align: right;
             background-color: rgb(255, 255, 255);
            position: absolute;
-           bottom: 70%;
            right: 0%;
            padding: 20px;
-         
+           top: 200px;
+          
   }
             
     
